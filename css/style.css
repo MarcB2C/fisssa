@@ -101,6 +101,7 @@ figure figcaption {
 }
 .sticky-wrapper {
   background: black;
+  position: fixed;
 }
 
 .logo {
@@ -1682,4 +1683,120 @@ font-weight: bold;
 
 .js-sticky-header .list-unstyled a {
   margin-bottom: 0;
+}
+
+@media only screen and (max-width: 720px) {
+  #main {
+    overflow-x: hidden;
+  }
+  .site-section {
+    padding: 4rem 0;
+  }
+  .burger:before, .burger span, .burger:after {
+    background: white !important;
+  }
+  .hero-section .hero-text-image {
+    bottom: unset !important;
+    top: -25px;
+  }
+  .slog-content {
+    width: 80% !important;
+  }
+  .how-it-work {
+    margin-top: 20px;
+  }
+  .how-it-work-security {
+    margin-top: 20px;
+  }
+  .hero-section .iphone-wrap .phone-1 {
+    margin-left: 0;
+    width: 300px;
+  }
+  .download-container {
+     top: 0
+  }
+
+  .side-image{
+      position: initial;
+      width: 280px;
+    }
+     p {
+      white-space: initial !important;
+    }
+  .advice {
+    width: 100%;
+  }
+  .app-section-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer ul li {
+    width: 100%
+  }
+  .footer ul {
+    width: 100%;
+  }
+  .footer p {
+    text-align: center;
+  }
+  .content {
+    width: 100%;
+  }
+  .second {
+    left: 0;
+  }
+  .last {
+    left: 0;
+  }
+  .footer .play-store {
+    width: 100px;
+  }
+
+  .footer .last {
+    width: 95px !important;
+  }
+  .download-header img {
+    width: 100%;
+  }
+  .download-header .list-unstyled a {
+    padding: 0 !important;
+    margin-bottom: 0;
+  }
+
+  .hero-section-second {
+    max-width: 720px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+}
+  .pricing-container, .note-container, .ruls-container{
+    margin-top: 30px;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .intro-images-container {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .container {
+    width: 100%;
+    padding-right: 25px;
+    padding-left: 50px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .footer .logo {
+    width: 100%;
+  }
+  .security-rules-container{
+    margin-top: 0;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
 }
