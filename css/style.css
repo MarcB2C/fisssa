@@ -55,6 +55,9 @@ h6,
 .border-top {
   border-top: 1px solid #f2f2f2 !important;
 }
+.blue-image {
+  min-height: 483px;
+}
 
 .border-bottom {
   border-bottom: 1px solid #f2f2f2 !important;
@@ -89,6 +92,7 @@ figure figcaption {
 .question{
   color: black;
   margin: 0 0 25px;
+  text-transform: capitalize;
 }
 .no-back-to-line p {
   white-space: nowrap;
@@ -100,13 +104,22 @@ figure figcaption {
   right: 10px;
 }
 .sticky-wrapper {
-  background: black;
-  position: fixed;
+  background: white !important;
+  position: fixed !important;
+  box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.2);
 }
 
 .logo {
   object-fit: cover;
   width: 50%;
+  position: relative;
+  bottom: 50px;
+}
+.footer-logo {
+  object-fit: cover;
+  width: 50%;
+  position: relative;
+  bottom: 5px;
 }
 .app-section-container {
   display: flex;
@@ -151,6 +164,9 @@ figure figcaption {
 .last{
  left: 150px;
 }
+.tab-pane a {
+  color: #0000A0;
+}
 
 .description  {
   display: inline
@@ -184,6 +200,7 @@ figure figcaption {
 .saturn3 {
   left: 523px;
   top: 82px;
+  width: 145px;
   animation: orbit3 30s linear infinite;
 }
 .saturn4 {
@@ -226,7 +243,7 @@ figure figcaption {
   position: absolute;
   top: -30%;
   overflow: hidden;
-  width: 400px;
+  width: 450px;
   left: 45%;
 }
 
@@ -521,13 +538,11 @@ figure figcaption {
   color: #fff;
 }
 
-.sticky-wrapper .site-navbar .site-menu > li > a {
-  color: rgba(255, 255, 255, 0.8) !important;
-}
+
 
 .sticky-wrapper .site-navbar .site-menu > li > a:hover,
 .sticky-wrapper .site-navbar .site-menu > li > a.active {
-  color: #fff !important;
+  color: #0000A0 !important;
 }
 
 .sticky-wrapper.is-sticky .burger:before,
@@ -847,7 +862,10 @@ figure figcaption {
   background: black;
   position: relative;
   border-top: none;
-  height: 40vh;
+  min-height: 579px
+}
+.app-store-logo {
+  width: 181px !important;
 }
 
 .hero-section .wave {
@@ -864,8 +882,7 @@ figure figcaption {
 
 .hero-section,
 .hero-section > .container > .row {
-  height: 100vh;
-  min-height: 880px;
+  min-height: 780px;
 }
 
 .hero-section.inner-page {
@@ -914,7 +931,7 @@ figure figcaption {
 
 .hero-section .iphone-wrap .phone-2,
 .hero-section .iphone-wrap .phone-1 {
-  width: 500px;
+  width: 475px;
 }
 
 .step-container {
@@ -1397,19 +1414,20 @@ figure figcaption {
 --------------------------------------------------------------*/
 
 .footer {
-  padding: 3rem 0 0 0;
+  padding: 1rem  0;
 }
 
 .footer ul li {
   margin-bottom: 20px;
-  width: calc(100% + 50px);
+  width: 100%
 }
 .footer ul  {
-  width: calc(100% + 50px);
+  width: 100%
 }
 
 .footer a {
   color: #FFF;
+  white-space: nowrap;
 }
 
 .footer-links {
@@ -1444,7 +1462,6 @@ figure figcaption {
 
 .hero-section .hero-text-image {
   position: relative;
-  bottom: 90px;
 }
 .review {
   position: relative;
@@ -1569,7 +1586,7 @@ figure figcaption {
   margin-top: 30px;
 }
 .download-header img{
-  width: 100px;
+  width: 100px !important;
   margin-bottom: 4px;
 }
 .download-header ul{
@@ -1582,13 +1599,16 @@ figure figcaption {
 }
 .blue-image-container img {
   width: 100%;
-  height: 32vh;
   position: relative;
-  top: 80px;
+  top: 96px;
 }
+.contract p {
+  line-height: 2rem;
+}
+
 .intro-images-container {
   display: flex;
-  width: calc(100% + 50px);
+  width: 100%;
   justify-content: space-evenly;
   margin: 50px 0;
 }
@@ -1685,7 +1705,7 @@ font-weight: bold;
   margin-bottom: 0;
 }
 
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 768px) {
   #main {
     overflow-x: hidden;
   }
@@ -1693,7 +1713,7 @@ font-weight: bold;
     padding: 4rem 0;
   }
   .burger:before, .burger span, .burger:after {
-    background: white !important;
+    background: #0000A0  !important;
   }
   .hero-section .hero-text-image {
     bottom: unset !important;
@@ -1763,12 +1783,8 @@ font-weight: bold;
     margin-bottom: 0;
   }
 
-  .hero-section-second {
-    max-width: 720px;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-}
+
+
   .pricing-container, .note-container, .ruls-container{
     margin-top: 30px;
     width: 100%;
@@ -1791,12 +1807,52 @@ font-weight: bold;
     margin-right: auto;
     margin-left: auto;
   }
-  .footer .logo {
+  .footer-logo {
     width: 100%;
   }
   .security-rules-container{
     margin-top: 0;
     padding-right: 30px;
     padding-left: 30px;
+  }
+  .hero-section,
+  .hero-section > .container > .row {
+    min-height: 880px;
+  }
+  .app-store-logo {
+    width: 200px !important;
+  }
+
+}
+
+@media (min-width: 768px){
+  .last {
+    left: 45px;
+  }
+  .second {
+    left: 25px;
+  }
+  .advice {
+    margin-top: 50px;
+    width: 100%;
+  }
+  .footer ul li {
+    width: 100%
+  }
+  .footer ul  {
+    width: 100%
+  }
+
+}
+@media (max-width: 1200px){
+  .no-back-to-line p {
+    text-align: left;
+    white-space: initial;
+  }
+  .saturn1, .saturn2, .saturn3, .saturn4, .saturn5 {
+    left: 323px;;
+  }
+  .fixed-center-image {
+    left: 300px;
   }
 }

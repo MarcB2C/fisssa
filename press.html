@@ -14,7 +14,6 @@
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,700|Roboto:300,400,700&display=swap" rel="stylesheet">
 
-
   <!-- Bootstrap CSS File -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
@@ -26,6 +25,7 @@
 
   <!-- Template Main CSS File -->
   <link href="css/style.css" rel="stylesheet">
+
 
 </head>
 
@@ -62,7 +62,7 @@
                   <ul class="list-unstyled">
                     <li>
                       <a href="https://play.google.com/store/apps/details?id=com.bonschco.fissaatest" target="_blank">
-                      <img src="img/google-play.png" alt="" data-aos="fade-right" data-aos-delay="200">
+                        <img src="img/google-play.png" alt="" data-aos="fade-right" data-aos-delay="200">
                       </a>
                     </li>
                     <li>
@@ -95,7 +95,7 @@
       <div class="hero-section-second">
         <div class="row">
           <div class="blue-image-container">
-            <img src="img/yellow.png" class="blue-image"  data-aos="fade-right">
+            <img src="img/white.png" class="blue-image"  data-aos="fade-right">
           </div>
         </div>
       </div>
@@ -104,14 +104,13 @@
       <div class="container">
         <div class="row mb-5 align-items-end">
           <div class="col-md-8 offset-md-3 col-sm-12 align-items-center" data-aos="fade-up">
-            <h2 style="text-align: center; font-weight: bold">Nous contacter</h2>
+            <h2 style="text-align: center; font-weight: bold">Press / Media</h2>
           </div>
 
         </div>
 
             <div class="row">
-
-              <div class="col-md-8 offset-md-3 col-sm-12"  data-aos="fade-up">
+              <div class="col-md-8 offset-md-3 col-sm-12 mb-md-0"  data-aos="fade-up">
                 <form action="forms/contact.php" method="post" role="form" class="php-email-form">
 
                   <div class="row">
@@ -121,13 +120,29 @@
                       <div class="validate"></div>
                     </div>
                     <div class="col-md-6 form-group">
+                      <label for="name">Prénom</label>
+                      <input type="text" name="name" class="form-control" id="lastname" data-rule="minlen:4" data-msg="Veuillez saisir au moins 4 caractères" />
+                      <div class="validate"></div>
+                    </div>
+
+                    <div class="col-md-12 form-group">
                       <label for="name">E-mail</label>
                       <input type="email" class="form-control" name="email" id="email" data-rule="email" data-msg="Veuillez saisir un e-mail valide" />
                       <div class="validate"></div>
                     </div>
                     <div class="col-md-12 form-group">
-                      <label for="name">Objet</label>
-                      <input type="text" class="form-control" name="subject" id="subject" data-rule="minlen:4" data-msg="Veuillez saisir au moins 8 caractères du sujet" />
+                      <label for="name">Téléphone</label>
+                      <input type="tel" class="form-control" name="subject" id="phone" data-rule="minlen:4" data-msg="Veuillez saisir un Telephone valide" />
+                      <div class="validate"></div>
+                    </div>
+                    <div class="col-md-12 form-group">
+                      <label for="name">Adresse</label>
+                      <input type="text" name="name" class="form-control" id="adress" data-rule="minlen:4" data-msg="Veuillez saisir au moins 4 caractères" />
+                      <div class="validate"></div>
+                    </div>
+                    <div class="col-md-12 form-group">
+                      <label for="name">Object</label>
+                      <input type="text" name="name" class="form-control" id="subject" data-rule="minlen:4" data-msg="Veuillez saisir au moins 4 caractères" />
                       <div class="validate"></div>
                     </div>
                     <div class="col-md-12 form-group">
@@ -135,11 +150,6 @@
                       <textarea class="form-control" name="message" cols="30" rows="10" data-rule="required" data-msg="Veuillez écrire quelque chose pour nous"></textarea>
                       <div class="validate"></div>
                     </div>
-                    <div class="col-md-12 form-group">
-                      <label for="attachment" class="btn btn-primary btn-block btn-outlined" style="background: #0000A0b8;" id="attachmentName">Pièces jointes</label>
-                      <input type="file" id="attachment"  style="display: none">
-                    </div>
-
                     <div class="col-md-12 mb-3">
                         <div class="loading">Chargement ...</div>
                       <div class="error-message"></div>
@@ -147,7 +157,7 @@
                     </div>
 
                     <div class="col-md-6 form-group">
-                      <input type="submit" class="btn btn-primary d-block w-100" value="Envoyer le message">
+                      <input type="submit" class="btn btn-primary d-block w-100" value="Envoyer">
                     </div>
                   </div>
 
@@ -211,7 +221,6 @@
   <script src="vendor/sticky/sticky.js"></script>
   <script src="vendor/aos/aos.js"></script>
   <script src="vendor/owlcarousel/owl.carousel.min.js"></script>
-
   <!-- Template Main JS File -->
   <script src="js/main.js"></script>
 
