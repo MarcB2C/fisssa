@@ -117,18 +117,6 @@
 	};
 	siteSticky();
 
-  var siteOwlCarousel = function() {
-  	$('.testimonial-carousel').owlCarousel({
-		  center: true,
-	    items: 1,
-	    loop: true,
-	    margin: 0,
-	    autoplay: true,
-	    smartSpeed: 1000,
-		});
-  };
-  siteOwlCarousel();
-
 	$("#attachment").change(function() {
 		const filename = this.files[0].name;
 		$('#attachmentName').text(filename);
