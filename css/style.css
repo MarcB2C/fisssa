@@ -1769,14 +1769,14 @@ font-weight: bold;
     left: 0;
   }
   .footer .play-store {
-    width: 100px;
+    width: 103px;
   }
 
   .footer .last {
     width: 95px !important;
   }
   .download-header img {
-    width: 100%;
+    width: 100% !important;
   }
   .download-header .list-unstyled a {
     padding: 0 !important;
